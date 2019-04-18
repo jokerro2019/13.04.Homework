@@ -9,4 +9,11 @@
 @import "parts/services";
 @import "parts/gallery";
 @import "parts/subscribe";
-@import "parts/blog"
+@import "parts/blog";
+@import "parts/contact";
+
+@media (max-width: 1170px) {
+    .grid {
+        width: 100%;
+    }
+  }

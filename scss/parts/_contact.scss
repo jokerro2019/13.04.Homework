@@ -1,0 +1,79 @@
+.contact {
+    background: url(../img/contact-bg.png) center right / cover;
+    padding: 100px 0;
+
+
+    .grid {
+
+        h1 {
+            @include large-title($color-black);
+        }
+
+        .form-grid {
+            display: flex;
+        }
+    }
+
+    &__content {
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+
+        input {
+            padding: 10px;
+            background-color: $color-light-blue;
+            border: none;
+            outline: none;
+            margin-bottom: 10px;
+            color: $color-white;
+            font-weight: 600;
+        }
+
+        ::-webkit-input-placeholder {color:rgba(255, 255, 255, 0.6); font-weight: 100;}
+        ::-moz-placeholder          {color:rgba(255, 255, 255, 0.6); font-weight: 100;}
+        :-moz-placeholder           {color:rgba(255, 255, 255, 0.6); font-weight: 100;}
+        :-ms-input-placeholder      {color:rgba(255, 255, 255, 0.6); font-weight: 100;}
+
+        input:focus {
+            background-color: $color-blue;
+        }
+
+        #form-area {
+            resize: none;
+            background-color: $color-light-blue;
+            color: $color-white;
+            padding: 10px;
+            border: none;
+            outline: none;
+        }
+
+        #form-area:focus {
+            background-color: $color-blue;
+        }
+
+    }
+
+    .btn {
+        background-color: blueviolet;
+    }
+
+    &__connect {
+        &-item1 {
+            font-weight: 600;
+            line-height: 25px;
+            color: $color-black;
+        }
+
+        &-item2 {
+            font-size: 20px;
+            line-height: 25px;
+            color: $color-black;
+        }
+    }
+
+    
+}
